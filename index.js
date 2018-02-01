@@ -21,7 +21,7 @@ app.use(
 );
 
 
-app.get('/api', (req, res) => res.send("Server is ok!"))
+app.get('/api', (req, res) => res.send("Server is ok for sure!"))
 
 function runServer(port = PORT) {
     const server = app
