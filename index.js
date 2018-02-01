@@ -25,6 +25,8 @@ app.get('/api/users', (req, res) => {
   const users = [
     {name: 'Ray'},
     {name: 'James'}
+
+    
   ]
 
   res.json(users)
