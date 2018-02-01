@@ -21,7 +21,14 @@ app.use(
 );
 
 
-app.get('/api', (req, res) => res.send("Server is ok for sure!"))
+app.get('/api/users', (req, res) => {
+  const users = [
+    {name: 'Ray'},
+    {name: 'James'}
+  ]
+
+  res.json(users)
+})
 
 function runServer(port = PORT) {
     const server = app
